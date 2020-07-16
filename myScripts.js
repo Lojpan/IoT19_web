@@ -10,11 +10,11 @@ function getTrainTimes() {
         .then((resp) => resp.json())
         .then(function (data) {
             console.log(data)
-            let departuresMetros = data.ResponseData.Metros; 
+            let departuresMetros = data.ResponseData.Metros;
             departurediv.innerHTML = "";
             return departuresMetros.map(function (departure) {
                 let divtag = document.createElement('div');
-        
+
                 divtag.innerHTML = `${departure.DisplayTime + " " + departure.Destination}`;
                 departurediv.appendChild(divtag);
             })
@@ -23,6 +23,29 @@ function getTrainTimes() {
             console.log(error);
         });
 }
+
+function getTramTimes() {
+    const departurediv = document.getElementById('departuresTrams');
+
+    const uriTrains = 'https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=2ce7e7eb4aac48a294cd444f4417607c&siteid=9294&timewindow=30';
+    fetch(uriTrains)
+        .then((resp) => resp.json())
+        .then(function (data) {
+            console.log(data)
+            let departuresTrams = data.ResponseData.Trams;
+            departurediv.innerHTML = "";
+            return departuresTrams.map(function (departure) {
+                let divtag = document.createElement('div');
+
+                divtag.innerHTML = `${departure.DisplayTime + " " + departure.Destination}`;
+                departurediv.appendChild(divtag);
+            })
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+}
+
 
 
 
@@ -37,13 +60,13 @@ function getForecast() {
             console.log(data)
             let forecast = data.timeSeries[0].parameters;
             let divtag = document.createElement('div');
-         
+
 
             // The Weathersymbol API presents a number between 1-28, this loop matches that number with an image from an array stored locally
-            for (i = 0; i < 28; i++) {  
+            for (i = 0; i < 28; i++) {
 
                 if (forecast[18].values[0] == i) {
-                    
+
                     var img = new Image();
                     var div = document.getElementById('divWeatherSymbol');
                     img.onload = function () {
@@ -61,6 +84,27 @@ function getForecast() {
             console.log(error);
         });
 }
+
+function removal() {
+    var el = document.getElementById('departuresTrams');
+    el.remove();
+}
+
+function removal2() {
+    var el2 = document.getElementById('departures');
+    el2.remove();
+}
+
+/*function removeAndLoadTrains(){
+    removal();
+    setTimeout(getTrainTimes(),1000)
+}
+
+function removeAndLoadTrams(){
+    removal();
+    setTimeout(getTramTimes(),1000)
+}
+*/
 
 
 
