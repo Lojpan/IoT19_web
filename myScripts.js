@@ -3,7 +3,7 @@
 
 
 function getTrainTimes() {
-    const departurediv = document.getElementById('departures');
+    const departurediv = document.getElementById('departuresTrains');
 
     const uriTrains = 'https://cors-anywhere.herokuapp.com/http://api.sl.se/api2/realtimedeparturesV4.json?key=2ce7e7eb4aac48a294cd444f4417607c&siteid=9294&timewindow=30';
     fetch(uriTrains)
@@ -85,27 +85,11 @@ function getForecast() {
         });
 }
 
-function removal() {
-    var el = document.getElementById('departuresTrams');
-    el.remove();
-}
 
-function removal2() {
-    var el2 = document.getElementById('departures');
-    el2.remove();
+function clearBox(elementID)
+{
+    document.getElementById(elementID).innerHTML = "";
 }
-
-/*function removeAndLoadTrains(){
-    removal();
-    setTimeout(getTrainTimes(),1000)
-}
-
-function removeAndLoadTrams(){
-    removal();
-    setTimeout(getTramTimes(),1000)
-}
-*/
-
 
 
 // Array with the Images needed for getForecast()
