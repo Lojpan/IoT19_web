@@ -1,7 +1,4 @@
 
-
-
-
 function getTrainTimes() {
     const departurediv = document.getElementById('departures');
 
@@ -47,8 +44,6 @@ function getTramTimes() {
 }
 
 
-
-
 function getForecast() {
 
     const divForecast = document.getElementById('divForecast');
@@ -72,7 +67,6 @@ function getForecast() {
                     img.onload = function () {
                         div.innerHTML += '<img src="' + img.src + '" />';
                     };
-
                     img.src = imgArray[i];
 
                     break;
