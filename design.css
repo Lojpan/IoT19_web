@@ -5,6 +5,12 @@ body{
   background-size: cover;
 }
 
+footer{
+  position: absolute;
+  padding-top: 10%;
+  padding-left: 40%;
+}
+
 .weatherSymbol{
   z-index: 1; 
   position: absolute;
