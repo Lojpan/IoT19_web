@@ -92,7 +92,7 @@ var imgArray = ['weatherSymbols/1.png', 'weatherSymbols/2.png', 'weatherSymbols/
     , 'weatherSymbols/18.png', 'weatherSymbols/19.png', 'weatherSymbols/20.png', 'weatherSymbols/21.png', 'weatherSymbols/22.png', 'weatherSymbols/23.png'
     , 'weatherSymbols/24.png', 'weatherSymbols/25.png', 'weatherSymbols/26.png', 'weatherSymbols/27.png'];
 
-let users = ['lojpan1', 'lojpan2'];     //stored ussernames
+let users = ['lojpan', 'james'];     //stored ussernames
 let passwords = ['123', '234'];         //stored passwords
 let validation = false;                 //bool for validation
     
