@@ -42,7 +42,6 @@ function getTramTimes() {
         });
 }
 
-
 function getForecast() {
 
     const divForecast = document.getElementById('divForecast');
@@ -129,4 +128,6 @@ function logout(){
 
 }
  
-
+function setRight(){
+    document.getElementById("googleCal").style.right = "100px";
+}

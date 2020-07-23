@@ -1,86 +1,68 @@
 body{
-  background-color: #6c7fa7 ;
-}
-h1{
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  color: blue;
+   background-image: linear-gradient(rgba(142, 140, 140, 0.6), rgba(107, 99, 99, 0.6)), url('/media/IOT.jpg'); 
+  height: 100vh;
+  background-position: center;  
+  background-size: cover;
 }
 
-
-.weatherSymbol
-{
+.weatherSymbol{
   z-index: 1; 
   position: absolute;
   top: 40px;
   left: 725px;
   width: 200px;
   height: 100px;
- 
 }
 
   .button1  {
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 100px;
     left: 10px;
-    border: 1px solid gray;
-    background-color: darkgray; 
-    border: none;
+    border: 2px solid rgb(50, 63, 66);
+    background-color: rgb(33, 119, 150);
     color: white;
     padding: 15px 32px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+    border-radius:  10px;
   }
   .button1:hover  {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
   .button2 {
+    font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     top: 100px;
     left: 115px;
-    border: 2px solid black;
-    background-color: darkgray; 
-    border: none;
+    border: 2px solid rgb(50, 63, 66);
+    background-color: rgb(33, 119, 150); 
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
+    border-radius: 10px;
   }
   .button2:hover  {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
   }
 
-.logoutBtn{
-  font-family: Arial, Helvetica, sans-serif;
-  background: rgb(230, 62, 21);
-  opacity: 0.5;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  width: 10%;
-  padding: 15px;
-}
-
-.logoutBtn:hover{
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  opacity: 1.0;
-}
-
-  .departures {
+.departures {
     z-index: 1; 
     position: absolute;
     top: 160px;
     left: 55px;
 }
 
-
 .loginPage{
+  background-size: cover;
   width: 360px;
   padding: 10% 0 0; 
   margin: auto;
@@ -89,38 +71,75 @@ h1{
 .form   {
   position: relative;
   z-index: 1;
-  background: #565983;
+  background: #6388a9;
   max-width: 360px;
   margin: 0 auto 100px;
   padding: 45px;
+  border-radius: 10%;
   text-align: center;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .form input{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin: 0 auto 15px;
   padding: 15px;
-  background: #ffffff;
+  border-radius: 15px;
+  background: #8fddff;
+  opacity: 0.6;
   box-sizing: border-box;
   width: 100%;
+  
+}
 
+.form input:hover  {
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
+  opacity: 0.8;
 }
 
 .form button{
   font-family: Arial, Helvetica, sans-serif;
-  background: rgb(8, 165, 79);
-  opacity: 0.7;
+  background: rgb(111, 160, 133);
+  opacity: 0.6;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 5px;
   width: 100%;
   padding: 15px;
-
 }
 
 .form button:hover  {
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
+  /*background: rgb(111, 160, 133);*/
   opacity: 1.0;
+}
+.logoutBtn{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background: rgb(33, 119, 150);
+  opacity: 0.8;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 10%;
+  padding: 15px;
+  border: 2px solid rgb(50, 63, 66);
+
+}
+
+.logoutBtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1.0;
+}
+
+.calendar{
+  position: center;
+  size: 100%;
+  padding-top: 20%;
+  margin: auto;
+
 }

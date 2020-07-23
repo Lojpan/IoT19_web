@@ -10,15 +10,23 @@
 </head>
 <body>
     <script>getTramTimes();</script>
+
     <div id="logoutDiv"><button type="button" class="logoutBtn" onclick="logout();">log out</button></div>
     <div id="divWeatherSymbol" class="weatherSymbol"></div>
     <div id="departuresTrains" class="departures"></div>
     <div id="departuresTrams" class="departures"></div>
-    
-    <div><button onclick="clearBox('departuresTrams');getTrainTimes();" class="button1">Metro</button></div>
+
+    <div>
+        <button onclick="clearBox('departuresTrams');getTrainTimes();" class="button1">Metro</button></div>
     <div><button onclick="clearBox('departuresTrains');getTramTimes();" class="button2">Tram</button></div>
 
+    <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=bo9tp5esqesq68jatuohehk8ds%40group.calendar.google.com&ctz=Europe%2FStockholm"></iframe>
+    </div> 
+ 
+
     <script>
+        //setRight()
         getTramTimes();
         //getTrainTimes();
         getForecast();
