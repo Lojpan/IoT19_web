@@ -1,4 +1,3 @@
-
 function getTrainTimes() {
     const departurediv = document.getElementById('departuresTrains');
 
