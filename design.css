@@ -1,3 +1,14 @@
+body{
+  background-color: #6c7fa7 ;
+}
+h1{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: blue;
+}
+
+
 .weatherSymbol
 {
   z-index: 1; 
@@ -8,8 +19,6 @@
   height: 100px;
  
 }
-
-
 
   .button1  {
     position: absolute;
@@ -47,9 +56,71 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
+.logoutBtn{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(230, 62, 21);
+  opacity: 0.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 10%;
+  padding: 15px;
+}
+
+.logoutBtn:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1.0;
+}
+
   .departures {
     z-index: 1; 
     position: absolute;
     top: 160px;
     left: 55px;
+}
+
+
+.loginPage{
+  width: 360px;
+  padding: 10% 0 0; 
+  margin: auto;
+}
+
+.form   {
+  position: relative;
+  z-index: 1;
+  background: #565983;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0 auto 15px;
+  padding: 15px;
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+.form button{
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(8, 165, 79);
+  opacity: 0.7;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+
+}
+
+.form button:hover  {
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.24), 0 10px 50px 0 rgba(0,0,0,0.19);
+  opacity: 1.0;
 }

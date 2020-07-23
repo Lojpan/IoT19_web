@@ -1,4 +1,3 @@
-
 function getTrainTimes() {
     const departurediv = document.getElementById('departuresTrains');
 
@@ -92,3 +91,42 @@ var imgArray = ['weatherSymbols/1.png', 'weatherSymbols/2.png', 'weatherSymbols/
     , 'weatherSymbols/12.png', 'weatherSymbols/13.png', 'weatherSymbols/14.png', 'weatherSymbols/15.png', 'weatherSymbols/16.png', 'weatherSymbols/17.png'
     , 'weatherSymbols/18.png', 'weatherSymbols/19.png', 'weatherSymbols/20.png', 'weatherSymbols/21.png', 'weatherSymbols/22.png', 'weatherSymbols/23.png'
     , 'weatherSymbols/24.png', 'weatherSymbols/25.png', 'weatherSymbols/26.png', 'weatherSymbols/27.png'];
+
+let users = ['lojpan1', 'lojpan2'];     //stored ussernames
+let passwords = ['123', '234'];         //stored passwords
+let validation = false;                 //bool for validation
+    
+//Validation
+function validateUser(){
+    let user = document.getElementById("name").value;
+    let password = document.getElementById("password").value; 
+        for (let index = 0; index < users.length; index++) {
+         if(users[index] === user && passwords[index] === password){
+            validation = true;
+            }
+        }
+            if(validation != true){
+                alert("Wrong user or password!")
+            }else{
+                return window.location.href="mainPage.html";
+            }
+}
+    
+function newPage(validation){
+    if(validation === true){
+        loadMainPage();
+    }else{
+        alert("Wrong user or password!")
+    }
+}
+
+function loadMainPage(){
+        return window.location.href="mainPage.html";
+}
+
+function logout(){
+    return window.location.href="index.html";
+
+}
+ 
+
