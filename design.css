@@ -3,12 +3,18 @@ body{
   height: 100vh;
   background-position: center;  
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-footer{
-  position: absolute;
-  padding-top: 10%;
-  padding-left: 40%;
+.centered {
+  margin: 10px auto;
+  text-align: center;
+  width: 800px;
+  opacity: 0.6;
+  box-sizing: border-box;
+
 }
 
 .weatherSymbol{
@@ -146,6 +152,4 @@ footer{
   position: center;
   size: 100%;
   padding-top: 20%;
-  margin: auto;
-
 }
